@@ -1,0 +1,370 @@
+                      /* Start Template */
+                  /* عمل Bitcoin Dashboard */
+      /* https://elzero.org/frontend-bitcoin-dashboard/ */
+
+/* Start Main */
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+:root {
+  --main-color: #0D40C6;
+  --main-lite-color: #1652F0;
+  --bor-red: 7px;
+  --time-anim: 0.5s;
+  --text-color: #999898;
+  --d-color: #3F4452;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding: 10px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+i {
+  color: #fff;
+  font-size: 1rem;
+}
+.child {
+  width: 100%;
+  padding-left: 25px;
+}
+@media (max-width:768px) {
+  .child {
+    padding-left: 0;
+  }
+}
+/* End Main */
+/* Start Code */
+.fath {
+  display: flex;
+  height: 100vh;
+}
+  /* Start Links */
+.fath .links {
+  background-color: var(--main-color);
+  position: fixed;
+}
+.fath .links .container {
+  height: 150vh;
+  padding: 0 10px;
+}
+.fath .links .container .list {
+  margin-top: 100%;
+}
+.fath .links .container .list a {
+  padding: 15px;
+  border-radius: var(--bor-red);
+  transition: var(--time-anim);
+}
+.fath .links .container .list a:hover {
+  background-color: var(--main-lite-color)
+}
+.fath .links .container .list a:nth-child(2) {
+  background-color: var(--main-lite-color);
+}
+  /* End Links */
+  /* Start Header */
+.fath .child {
+  margin-left: 70px;
+}
+.fath .child .container .header {
+  border-bottom: solid 1px #ddd;
+}
+@media (max-width: 768px) {
+  .fath .child .container .header .media-head {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.fath .child .container .header .logo .title {
+  Color: var(--main-color);
+}
+.fath .child .container .header .logo .img-someone {
+  background-color: red;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+/* Right */
+.fath .child .container .header .right-head .log {
+  padding: 8px;
+  border-radius: 30px;
+  transition: var(--time-anim);
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .fath .child .container .header .right-head .log {
+    margin: 10px 0;
+  }
+}
+.fath .child .container .header .right-head .log:hover {
+  background-color: #eee;
+}
+.fath .child .container .header .right-head .log i:first-child {
+  background-color: var(--main-color);
+  padding: 7px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+.fath .child .container .header .right-head .log span:nth-child(2) {
+  padding: 0 10px;
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+.fath .child .container .header .right-head .log i:nth-child(3) {
+  color: var(--text-color);
+}
+.fath .child .container .header .right-head .data {
+  margin: 0 20px;
+}
+.fath .child .container .header .right-head .data span {
+  padding: 0 7px;
+}
+.fath .child .container .header .right-head .data .bit {
+  padding: 10px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-left: solid 1px #ddd;
+  border-top: solid 1px #ddd;
+  border-bottom: solid 1px #ddd;
+  background-color: #BBCCFB;
+}
+.fath .child .container .header .right-head .data .bit span {
+  color: var(--main-color);
+}
+.fath .child .container .header .right-head .data .bit i {
+  color: var(--main-color);
+}
+  .fath .child .container .header .right-head .data .usd {
+  padding: 10px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-right: solid 1px #ddd;
+  border-top: solid 1px #ddd;
+  border-bottom: solid 1px #ddd;
+  color: var(--text-color);
+}
+  /* End Header */
+  /* Start Template */
+.fath .child .container .template .container .wel {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+.fath .child .container .template .container .wel span {
+  color: var(--text-color);
+}
+  /* End Template */
+  /* Start About */
+    /* Start Mony*/
+.fath .child .container .template .container .box .container {
+  padding: 10px 20px;
+}
+/* @media (max-width:768px) {
+  .fath .child .container .template .container .box .container {
+    flex-direction: column;
+  }
+} */
+/* .fath .child .container .template .container .box .container .mony {
+  background-color: violet;
+  height: 50vh;
+} */
+.fath .child .tem-one .con {
+  justify-content: space-between;
+}
+.fath .child .tem-one .con .title {
+  margin-right: 0;
+}
+.fath .child .che .top {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .fath .child .che {
+    flex-direction: column;
+  }
+  .fath .child .che .top {
+    width: fit-content;
+  }
+}
+.fath .child .che .top .img {
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.fath .child .che .top .data:nth-child(2) .text {
+  text-align: End;
+}
+.fath .child .che .top .data .text {
+  font-size: 0.9rem;
+}
+.fath .child .che .top .data .text .email {
+  color: var(--main-color);
+  font-size: 0.9rem;
+}
+.fath .child .che {
+  margin-bottom: 50px;
+}
+
+.fath .child .che .first {
+  padding: 10px 72px;
+  border-radius: var(--bor-red);
+  margin-left: 20px;
+  transition: var(--time-anim);
+}
+@media (max-width: 768px) {
+  .fath .child .che .first {
+    padding: 10px 40px;
+    margin-left: 5px;
+  }
+  .fath .child .che .min-box {
+    margin-bottom: 15px;
+  }
+  .fath .child .che .top .img {
+    width: 30px;
+    height: 30px;
+  }
+}
+.fath .child .che .first-one {
+  background-color:var(--main-color);
+  color: #fff;
+}
+.fath .child  .che .first-one:hover {
+  background-color: var(--main-lite-color);
+}
+.fath .child .che .first-two {
+  border: solid 1px #ddd;
+  color: var(--main-color);
+  background-color: #fff;
+}
+.fath .child .che .first-two:hover {
+  background-color: #ddd;
+}
+    /* Start Data */
+.fath .child .container .template .container .box .container .mony .unit-one .tem-one .name {
+  color: var(--d-color);
+}
+.fath .child .container .template .container .box .container .mony .unit-one .tem-one .con {
+  background-color: #F2F6FE;
+  color: rgba(65, 76, 128, 0.576);
+  font-size: 0.95rem;
+  width: calc(100% - 20px*2);
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .fath .child .container .template .container .box .container .mony .unit-one .tem-one .con {
+    justify-content: space-between;
+  }
+}
+.fath .child .container .template .container .box .container .mony .unit-one .tem-one .con:last-child {
+  background-color: #f2f6febd;
+  color: rgba(65, 76, 128, 0.391);
+}
+.fath .child .container .template .container .box .container .mony .unit-one .tem-one .con .title {
+  margin-right: 50%;
+}
+.fath .child .container .template .container .box .container .mony .unit-one .tem-one .con span i {
+  color: var(--text-color);
+  font-size: 0.7rem;
+  margin-right: 20px;
+  padding: 7px;
+  border-radius: 50%;
+  transition: var(--time-anim);
+}
+.fath .child .container .template .container .box .container .mony .unit-one .tem-one .con span i:hover {
+  background-color: #ddd;
+}
+@media (max-width: 768px) {
+  .fath .child .container .template .container .box .container .mony .unit-one .tem-one .con {
+    font-size: 0.84rem;
+  }
+  .fath .child .container .template .container .box .container .mony .unit-one .tem-one .con .title {
+    margin-right: 20px;
+  }
+  .fath .child .container .template .container .box .container .mony .unit-one .tem-one .con span i {
+    margin-right: 0;
+  }
+}
+.fath .child .container .template .container .box .container .mony .unit-one .tem-one .limit {
+  color: rgba(65, 76, 128, 0.576);
+  font-size: 0.95rem;
+}
+@media (max-width: 768px) {
+  .fath .child .container .template .container .box .container .mony .unit-one .tem-one .limit {
+    font-size: 0.74rem;
+  }
+}
+.fath .child .container .template .container .box .container .mony .unit-one .tem-one .limit .usd {
+  color: var(--d-color);
+}
+.fath .child .container .template .container .box .container .mony .unit-one .pull {
+  color: #fff;
+  background-color: #10D876;
+  font-weight: bold;
+  display: block;
+  padding: 10px 150px;
+  border-radius: var(--bor-red);
+  transition: var(--time-anim);
+  margin-top: 20px;
+}
+.fath .child .container .template .container .box .container .mony .unit-one .pull:hover {
+  background-color: #0a9753;
+}
+.fath .child .container .template .container .box .container .mony .unit-one .note {
+  color: rgba(65, 76, 128, 0.576);
+  font-size: 0.84rem;
+  width: 400px;
+  margin-top: 70px;
+}
+@media (max-width: 768px) {
+  .fath .child .container .template .container .box .container .mony .unit-one .pull {
+    padding: 10px 50px;
+  }
+  .fath .child .container .template .container .box .container .mony .unit-one .note {
+    width: 270px;
+    margin-top: 20px;
+  }
+}
+    /* Left Data */
+.fath .child .container .template .container .box .container .mony .about .container .unit-one .tem-one {
+  width: 100%;
+}
+.fath .child .container .template .container .box .container .mony .about .container .unit-one .tem-one .con {
+  font-size: 0.84rem;
+}
+
+@media (max-width: 768px) {
+  .fath .child .container .template .container .box .container .mony {
+    flex-direction: column;
+  }
+}
+.red {
+  color: red;
+}
+      /* End About */
+/* End Code */
+
+                      /* End Template */
+                  /* عمل Bitcoin Dashboard */
+      /* https://elzero.org/frontend-bitcoin-dashboard/ */
